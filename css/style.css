@@ -3,3 +3,34 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container{
+    max-width: 480px;
+    height: 100vh;
+    background-color: #141922;
+}
+
+.container-header{
+    background-color: #080b12;
+    width: 480px;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+
+.button-header{
+    position: relative;
+}
+
+.button-header button{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    font-size: 1em;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    padding: 10px 40px;
+    background-color: #080b12;
+}
