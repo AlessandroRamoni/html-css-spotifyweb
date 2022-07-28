@@ -43,6 +43,10 @@
         align-items: center;
     }
 
+    .justify-content-center{
+        justify-content: center;
+    }
+
 
     /* utilities */
 
@@ -200,7 +204,7 @@ footer{
 }
 
 footer button{
-   color: #ffffff;
+   color: #848484;
    background-color: inherit;
    border: 0;
    margin: 5px;
@@ -222,7 +226,6 @@ footer #play{
 footer .flex img{
     width: 50px;
 }
-
 
 
 /* .container-footer .img-sinister{
@@ -277,5 +280,13 @@ footer .flex img{
     .span-nascosto{
         display: none;
         color: #ffffff;
+    }
+
+}
+
+
+@media screen and (min-width:768px) {
+    #folder{
+        flex-direction: row;
     }
 }
