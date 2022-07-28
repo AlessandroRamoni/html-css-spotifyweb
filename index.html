@@ -12,43 +12,50 @@
     <title>Spotify App</title>
 </head>
 
-<body>
-    <div class="container">
-        <!-- header sfumato fixed -->
-        <header>
-            <div class="container-header">
-                <div class="button-header">
-                    <button>Effettua l'upgrade</button>
+<body class="debug">
+    <div class="web-app">
+        <div id="app-container">
+            <!-- aside sx con icone -->
+            <aside class="container-aside">
+                <div class="icone">
+                    <img class="xs-show" src="./img/logo-small.svg" alt="logo Spotify">
+                    <img class="xs-show" src="./img/home.svg" alt="home">
+                    <img class="xs-show" src="./img/search.svg" alt="lens">
+                    <img class="xs-show" src="./img/libreria.svg" alt="libreria">
+                    <div class="scritte">
+                        <img class="xs-hidden" src="./img/logo.svg" alt="logo con scritta">
+                        <img class="xs-hidden" src="./img/logo.svg" alt="logo con scritta">
+                        <img class="xs-hidden" src="./img/logo.svg" alt="logo con scritta">
+                        <img class="xs-hidden" src="./img/logo.svg" alt="logo con scritta">
+                    </div>
                 </div>
-            </div>
-        </header>
-        <!-- aside menu -->
-        <aside>
-            <div class="container-aside">
-                <div class="top-aside">
-                    <ul>
-                        <li><i class="fa-brands fa-spotify"></i></li>
-                        <li><i class="fa-solid fa-house"></i></li>
-                        <li><i class="fa-solid fa-magnifying-glass"></i></li>
-                        <li><i class="fa-solid fa-dice-three"></i></li>
-                    </ul>
-                </div>
-                <div class="bottom-aside">
-                    <ul>
-                        <li></li>
-                        li
-                    </ul>
-                </div>
-            </div>
-        </aside>
-        <main>
 
-        </main>
-        <!-- footer comandi -->
+
+                <div class="icone-down">
+                    <div class="flex-icone-down">
+                        <img src="./img/download.svg" alt="download">
+                        <span>Installa app</span>
+                    </div>
+                    <hr id="hr">
+                    <div class="flex-icone-down">
+                        <img src="./img/profile.svg" alt="profile">
+                        <span>John Doe</span>
+                    </div>
+                </div>
+            </aside>
+            <main>
+                <header>
+                    <a href="#">Effettua l'upgrade</a>
+                </header>
+                <div id="album-container">
+                    <div class="square">
+
+                    </div>
+                </div>
+            </main>
+        </div>
         <footer>
-            <div class="container-footer">
 
-            </div>
         </footer>
     </div>
 </body>
