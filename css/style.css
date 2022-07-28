@@ -39,6 +39,10 @@
         flex: 1;
     }
 
+    .align-items-center{
+        align-items: center;
+    }
+
 
     /* utilities */
 
@@ -91,7 +95,7 @@ header a{
 
 #album-container{
     overflow-y: auto;
-    height: calc(100vh - 60px);
+    height: calc(100vh - var(--footer-height));
 }
 
 .debug aside{
@@ -195,16 +199,39 @@ footer{
     padding: 10px;
 }
 
+footer button{
+   color: #ffffff;
+   background-color: inherit;
+   border: 0;
+   margin: 5px;
+}
+
+footer #play{
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+
+#console{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer .flex img{
+    width: 50px;
+}
 
 
 
-.container-footer .img-sinister{
+/* .container-footer .img-sinister{
     width: 70px;
 }
 
 .container-footer .img-sinister img{
     width: 100%;
-}
+} */
 
 
 
