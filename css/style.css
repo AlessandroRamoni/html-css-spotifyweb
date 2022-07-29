@@ -228,6 +228,14 @@ footer .flex img{
 }
 
 
+footer .flex .align-items-center div{
+    padding-left: 30px;
+}
+
+#folder{
+    padding-left: 50px;
+}
+
 /* .container-footer .img-sinister{
     width: 70px;
 }
