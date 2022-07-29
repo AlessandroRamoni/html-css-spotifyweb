@@ -3,7 +3,7 @@
 :root{
     --padding: 10px;
     --footer-height: 100px;
-    --header-height: 60px;
+    --header-height: 80px;
 }
 
 *{
@@ -119,6 +119,8 @@ header a{
     padding: 5px 20px;
     text-decoration: none;
     margin-right: 10px;
+    font-size: 2em;
+
 }
 
 #album-container{
@@ -131,7 +133,6 @@ header a{
 /* main container */
 
 .copertine{
-        border: 1px solid red;
         width: calc(100% / 2);
         padding: var(--padding);  
 }
@@ -157,6 +158,11 @@ aside .icone img{
     display: none;
     margin-bottom: 10px;
 }
+
+.circle{
+    clip-path: circle(50%);
+}
+
 
 footer{
     background-color: #282828;
@@ -318,4 +324,15 @@ footer .flex .align-items-center div{
     #folder{
         flex-direction: row;
     }
+
+    .copertine{
+        width: calc(100% / 4);
+}
+
+}
+
+@media screen and (min-width:1200px) {
+    .copertine{
+        width: calc(100% / 6);
+}       
 }
