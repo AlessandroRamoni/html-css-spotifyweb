@@ -109,6 +109,33 @@ height: 300vh;
 background-color: #141922;
 }
 
+
+/* nav */
+
+
+nav ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav{
+    padding-top: 100px;
+}
+
+.navigazione{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navigazione li{
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+
+
 /* header */
 
 header{
