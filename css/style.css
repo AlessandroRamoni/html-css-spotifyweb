@@ -14,6 +14,7 @@
 
 
 body{
+    font-family: "PT Sans", sans-serif, "Fredoka One", cursive;
     background-color: #141922;
     color: #999;
 }
@@ -127,11 +128,21 @@ nav{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
-.navigazione li{
-    margin-right: 15px;
-    margin-top: 15px;
+
+.navigazione li a{
+    text-decoration: none;
+    color: #7d7f84;
+}
+
+.navigazione li:first-child{
+    border-bottom: 2px solid #adff2f;
+}
+
+.navigazione li a:hover{
+    color: #ffffff;
 }
 
 
@@ -157,9 +168,11 @@ header a{
     padding: 5px 20px;
     text-decoration: none;
     margin-right: 10px;
-    font-size: 1.7em;
-
+    font-size: 1.5em;
 }
+
+header a:hover{
+    transform: rotate(40deg)}
 
 #album-container{
     overflow-y: auto;
@@ -315,13 +328,17 @@ footer .flex .align-items-center div{
         width: 150px;
     }
 
+    aside .icone a:nth-of-type(2){
+        border-left: 2px solid #adff2f;
+    }
+
     .container-aside{
         align-items: flex-start;
     }
 
     .scritte{
     padding-left: 30px;
-}
+    }
 
     #hr{
         display: block;
