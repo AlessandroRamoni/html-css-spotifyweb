@@ -193,6 +193,7 @@ header a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 aside .icone img{
@@ -213,6 +214,23 @@ aside .icone img{
 
 .circle{
     clip-path: circle(50%);
+}
+
+.button-play{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    visibility: hidden;
+    background-color: #979797;
+    color: #ffffff;
+    filter: opacity(0.5);
+    width: 30%;
+}
+
+.album-item:hover .button-play{
+    visibility: visible;
 }
 
 
