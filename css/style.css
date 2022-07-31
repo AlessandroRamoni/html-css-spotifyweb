@@ -19,6 +19,10 @@ body{
     color: #999;
 }
 
+img{
+    width: 100%;
+}
+
 /* utilities */
 
     .flex{
@@ -59,19 +63,32 @@ body{
     /* utilities */
 
 
-img{
-    width: 100%;
-}
-
 /* aside */ 
 
 aside img:not(#logo){
     width: 30px;
 }
 
-
 .container-aside .icone a{
     padding-top: 2px;
+}
+
+.icone{
+    display: flex;
+    flex-direction: column;
+}
+
+.icone a{
+    text-decoration: none;
+}
+
+.icone a:not(#logo):not(a:hover){
+    filter: invert(0.5);
+}
+
+.icone a > *{
+    vertical-align: middle;
+    color: #ffffff;
 }
 
 .span-nascosto{
@@ -100,7 +117,6 @@ main{
 }
 
 .debug aside{
-    /* width: 75px; */
     background-color: #000000;
     padding: var(--padding);
 }
@@ -240,11 +256,6 @@ aside .icone img{
 }
 
 
-footer{
-    background-color: #282828;
-    height: var(--footer-height);
-}
-
 .container-aside{
     display: flex;
     flex-direction: column;
@@ -252,23 +263,7 @@ footer{
     align-items: center;
 }
 
-.icone{
-    display: flex;
-    flex-direction: column;
-}
 
-.icone a{
-    text-decoration: none;
-}
-
-.icone a:not(#logo):not(a:hover){
-    filter: invert(0.5);
-}
-
-.icone a > *{
-    vertical-align: middle;
-    color: #ffffff;
-}
 
 .scritte{
     display: flex;
@@ -289,13 +284,21 @@ footer{
 
 .icone-down{
     width: 30px;
+    filter: invert(0.5);
 }
+
+
 
 .flex-icone-down span{
     display: none;
     color: #ffffff;
     font-size: 0.8em;
 }
+
+.flex-icone-down:hover{
+    cursor: pointer;
+}
+
 
 .xs-hidden{
     display: none;
@@ -304,6 +307,10 @@ footer{
 
 /* footer */
 
+footer{
+    background-color: #282828;
+    height: var(--footer-height);
+}
 
 footer{
     display: flex;
@@ -344,14 +351,22 @@ footer .flex .align-items-center div{
     padding-left: 40px;
 }
 
+.fa-heart:hover, .fa-folder:hover{
+    color: #ffffff;
+}
+
+#play:hover{
+    transform: scale(1.3);
+}
+
 
 /* media query*/
 
 @media screen and (min-width: 480px) {
 
     aside{
-        width: 150px;
-    }
+        width: 300px;
+    } 
 
     aside .icone a:nth-of-type(2){
         border-left: 2px solid #adff2f;
@@ -371,10 +386,11 @@ footer .flex .align-items-center div{
 
     .flex-icone-down span{
         display: block;
-    }
+    } 
 
     .flex-icone-down{
         display: flex;
+        gap: 10px;
     }
 
     .xs-show{
