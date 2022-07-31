@@ -23,6 +23,40 @@ img{
     width: 100%;
 }
 
+
+.debug aside{
+    background-color: #000000;
+    padding: var(--padding);
+}
+
+.debug .square{
+height: 300vh;
+background-color: #141922;
+}
+
+.web-app{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#app-container{
+    flex-grow: 1;
+    display: flex;
+}
+
+main{
+    flex-grow: 1;
+    position: relative;
+   
+}
+
+#album-container{
+    overflow-y: auto;
+    height: calc(100vh - var(--footer-height));
+    padding: 100px var(--padding) var(--padding);
+}
+
 /* utilities */
 
     .flex{
@@ -82,6 +116,7 @@ aside img:not(#logo){
     text-decoration: none;
 }
 
+
 .icone a:not(#logo):not(a:hover){
     filter: invert(0.5);
 }
@@ -97,33 +132,6 @@ aside img:not(#logo){
 
 #logo{
     width: 90px;
-}
-
-.web-app{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-#app-container{
-    flex-grow: 1;
-    display: flex;
-}
-
-main{
-    flex-grow: 1;
-    position: relative;
-   
-}
-
-.debug aside{
-    background-color: #000000;
-    padding: var(--padding);
-}
-
-.debug .square{
-height: 300vh;
-background-color: #141922;
 }
 
 
@@ -195,11 +203,7 @@ header a:hover{
     background-color: red;
 }
 
-#album-container{
-    overflow-y: auto;
-    height: calc(100vh - var(--footer-height));
-    padding: 100px var(--padding) var(--padding);
-}
+
 
 
 /* main container */
