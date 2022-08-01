@@ -196,11 +196,11 @@ header a{
     position: relative;
     right: 10px;
     top: 10px;
+    display: inline-block;
 }
 
 header a:hover{
-    transform: scale(1.3);
-    background-color: red;
+    transform: scale(1.2);
 }
 
 
@@ -219,6 +219,8 @@ header a:hover{
     align-items: center;
     position: relative;
 }
+
+
 
 aside .icone img{
     padding-top: 5px;
@@ -383,7 +385,7 @@ footer .flex .align-items-center div{
 @media screen and (min-width: 480px) {
 
     aside{
-        width: 300px;
+        width: 200px;
     } 
 
     aside .icone a:nth-of-type(2){
@@ -391,6 +393,7 @@ footer .flex .align-items-center div{
     }
 
     .container-aside{
+        flex-shrink: 0;
         align-items: flex-start;
     }
 
